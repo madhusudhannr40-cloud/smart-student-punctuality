@@ -10,6 +10,40 @@
 </head>
 
 <body>
+    <!-- Your existing website code -->
+
+<!-- Login Section -->
+<div>
+    <h2>Student Login</h2>
+
+    <input type="text" id="username" placeholder="Username">
+    <br><br>
+
+    <input type="password" id="password" placeholder="Password">
+    <br><br>
+
+    <button onclick="login()">Login</button>
+
+    <p id="message"></p>
+</div>
+
+<script>
+function login() {
+    let username = document.getElementById("username").value;
+    let password = document.getElementById("password").value;
+
+    if (username === "student" && password === "1234") {
+        document.getElementById("message").innerHTML =
+            "Login successful! ✅";
+    } else {
+        document.getElementById("message").innerHTML =
+            "Invalid username or password ❌";
+    }
+}
+</script>
+
+</body>
+</html>
 
     <div class="login-container">
 
